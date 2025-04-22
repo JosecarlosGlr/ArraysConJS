@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="display1">Array original: </p>
+    <p></p>
+    <p id="display2">Búsqueda de apellido plaza: </p>
+    <p></p>
+    <a href="index.html"><button>index</button></a>
+
+    <script>
+        let apellidos = ["Ramirez", "Tajuelo", "Gallego", "Plaza"];
+        document.getElementById("display1").innerHTML+=apellidos;
+
+        let plaza=apellidos.find(jue=>jue=="Plaza");
+        document.getElementById("display2").innerHTML+=plaza;
+    </script>
+</body>
+</html>
